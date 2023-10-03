@@ -5,12 +5,12 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 packages = [
-  { include = "braingames" },
+  { include = "brain_games" },
 ]
 
 [tool.poetry.scripts]
-brain-games = "braingames.scripts.brain_games:main"
-brain-even = "braingames.scripts.brain_even:start"
+brain-games = "brain_games.scripts.braingames:main"
+brain-even = "brain_games.scripts.brain_even:start"
 
 [tool.poetry.dependencies]
 python = "^3.10.12"

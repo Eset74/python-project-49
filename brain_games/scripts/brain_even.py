@@ -1,16 +1,14 @@
-from brain_games import main as greetings
-from vars_const import CHANCES
-from vars_const import RULES
+from brain_games.scripts.vars_const import CHANCES
+from brain_games.scripts.vars_const import RULES
+from random import randrange
 import prompt
-import random
-
 
 def is_even(num):
     return num % 2 == 0
 
 
 def print_random_num():
-    rand_num = random.randrange(100)
+    rand_num = randrange(100)
     print(f'Question: {rand_num}')
     return rand_num
 
@@ -28,7 +26,8 @@ def is_equal_answers(user_answer, corr_answer, user):
         print('Correct!')
         return True
     else:
-        print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{corr_answer}'")
+        print(f"'{user_answer}' is wrong answer ;(. "
+              f"Correct answer was '{corr_answer}'")
         print(f"Let's try again, {user}!")
         return False
 
@@ -41,7 +40,6 @@ def welcome_user():
 
 
 def start():
-    greetings()
     print(RULES)
 
     user = welcome_user()
@@ -56,5 +54,4 @@ def start():
     else:
         print(f'Congratulations, {user}!')
 
-
-start()
+#start()
