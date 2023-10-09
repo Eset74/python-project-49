@@ -1,10 +1,8 @@
 #!/usr/bin/env/python3
 from brain_games.scripts.vars_const import *
-import brain_games.scripts.games.launcher
 from random import randrange
 from random import choice
 import prompt
-
 
 
 def welcome_user(game):
@@ -84,6 +82,7 @@ def launch_prime():
 
     return 'yes' if result else 'no'
 
+
 def show_question(game):
     match game:
 
@@ -97,7 +96,7 @@ def show_question(game):
 
         case 'Gcd':
 
-             return launch_gcd()
+            return launch_gcd()
 
         case 'Progression':
 
