@@ -5,4 +5,4 @@ dist/
 .venv/
 .coverage
 coverage.xml
-.pytest_cache/.venv
+.pytest_cache/
