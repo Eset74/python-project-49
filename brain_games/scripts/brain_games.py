@@ -16,6 +16,8 @@ def welcome_user(game):
             print(RULES_CALC)
         case 'Gcd':
             print(RULES_GCD)
+        case 'Progression':
+            print(RULES_PROGRESSION)
     return user
 
 
@@ -43,6 +45,22 @@ def show_question(game):
                 if abs(max_ab) % i == 0 and abs(min_ab) % i == 0:
                     return i
 
+        case 'Progression':
+
+            arithmetic_list = []
+            start_int = randrange(100)  # Start number of arithmetic progression
+            step_int = randrange(1, 10)  # Step of progression
+            hide_num = randrange(1, 10)  # Random num to hide the field progression
+            for i in range(10):
+                arithmetic_list.append(start_int + step_int)
+                start_int += step_int
+            corr_answer = arithmetic_list[hide_num]
+            arithmetic_list[hide_num] = '..'
+
+            print(f'Question: {arithmetic_list}')
+
+            return corr_answer
+
 
 def get_user_answer(game):
     match game:
@@ -51,6 +69,8 @@ def get_user_answer(game):
         case 'Calc':
             return prompt.integer('Your answer: ')
         case 'Gcd':
+            return prompt.integer('Your answer: ')
+        case 'Progression':
             return prompt.integer('Your answer: ')
 
 
@@ -63,10 +83,6 @@ def is_equal_answers(user_answer, corr_answer, user):
               f"Correct answer was '{corr_answer}'")
         print(f"Let's try again, {user}!")
         return False
-
-
-def is_even(num):
-    return num % 2 == 0
 
 
 def main():
