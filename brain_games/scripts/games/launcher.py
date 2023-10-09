@@ -1,4 +1,8 @@
-from brain_games.scripts.brain_games import *
+from brain_games.scripts.brain_games import welcome_user
+from brain_games.scripts.brain_games import show_question
+from brain_games.scripts.brain_games import get_user_answer
+from brain_games.scripts.brain_games import is_equal_answers
+from brain_games.scripts.vars_const import CHANCES
 
 
 def start(game):
