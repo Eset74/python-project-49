@@ -1,5 +1,6 @@
 #!/usr/bin/env/python3
 from brain_games.scripts.vars_const import *
+# from brain_games.cli import welcome_user
 from random import randrange
 from random import choice
 import prompt
@@ -127,8 +128,9 @@ def is_equal_answers(user_answer, corr_answer, user):
 
 
 def main():
-    pass
-
+    print("Welcome to the Brain Games!")
+    name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
 
 if __name__ == '__main__':
     main()
