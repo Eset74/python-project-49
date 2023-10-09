@@ -1,16 +1,7 @@
-from brain_games.scripts.brain_games import *
+import brain_games.scripts.games.launcher as launch
 
 
-def start():
-    user = welcome_user('Progression')
+def main():
+    launch.start('Progression')
 
-    for _ in range(CHANCES):
-        corr_answer = show_question('Progression')
-        user_answer = get_user_answer('Progression')
-
-        if not is_equal_answers(user_answer, corr_answer, user):
-            break
-    else:
-        print(f'Congratulations, {user}!')
-
-#start()
+#main()
