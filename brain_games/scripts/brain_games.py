@@ -6,14 +6,16 @@ import prompt
 
 
 def welcome_user(game):
-    print('Welcome to the Brain Games!')
-    user = prompt.string('May I have your name? ')
+    user = prompt.string('Welcome to the Brain Games!\n'
+                         'May I have your name? ')
     print(f'Hello, {user}!')
     match game:
         case 'Even':
             print(RULES_EVEN)
         case 'Calc':
             print(RULES_CALC)
+        case 'Gcd':
+            print(RULES_GCD)
     return user
 
 
@@ -31,8 +33,15 @@ def show_question(game):
             return eval(f'{a} {exp} {b}')
 
         case 'Gcd':
-            a, b = randrange(100), randrange(100)
-        
+            a, b = randrange(1, 100), randrange(1, 100)
+
+            print(f'Question: {a} {b}')
+            max_ab = max(a, b)
+            min_ab = min(a, b)
+
+            for i in range(max_ab, 0, -1):
+                if abs(max_ab) % i == 0 and abs(min_ab) % i == 0:
+                    return i
 
 
 def get_user_answer(game):
@@ -40,6 +49,8 @@ def get_user_answer(game):
         case 'Even':
             return prompt.string('Your answer: ').lower()
         case 'Calc':
+            return prompt.integer('Your answer: ')
+        case 'Gcd':
             return prompt.integer('Your answer: ')
 
 

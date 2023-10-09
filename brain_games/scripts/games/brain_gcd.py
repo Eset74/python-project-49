@@ -2,7 +2,7 @@ from brain_games.scripts.brain_games import *
 
 
 def start():
-    user = welcome_user('gcd')
+    user = welcome_user('Gcd')
 
     for _ in range(CHANCES):
         corr_answer = show_question('Gcd')
