@@ -64,7 +64,7 @@ def launch_progression():
     corr_answer = arithmetic_list[hide_num]
     arithmetic_list[hide_num] = '..'
 
-    print(f'Question: {arithmetic_list}')
+    print(f'Question: {str(arithmetic_list)[1:-1]}')
 
     return corr_answer
 
