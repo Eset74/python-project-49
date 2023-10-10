@@ -1,7 +1,8 @@
-import brain_games.scripts.games.launcher as launch
+from random import randrange
+from random import choice
 
 
-def main():
-    launch.start('Calc')
-
-# main()
+def run_game():
+    a, b, exp = randrange(10), randrange(10), choice(['+', '-', '*'])
+    print(f'Question: {a} {exp} {b}')
+    return eval(f'{a} {exp} {b}')

@@ -1,7 +1,7 @@
-import brain_games.scripts.games.launcher as launch
+from random import randrange
 
 
-def main():
-    launch.start('Even')
-
-# main()
+def run_game():
+    rand_num = randrange(100)
+    print(f'Question: {rand_num}')
+    return 'yes' if rand_num % 2 == 0 else 'no'
