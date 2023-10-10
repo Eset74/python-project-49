@@ -1,7 +1,8 @@
 from random import randrange
-
+from brain_games.scripts.vars_const import RULES_PRIME
 
 def run_game():
+    print(RULES_PRIME)
     result = False
     rand_num = randrange(100)
     print(f'Question: {rand_num}')

@@ -12,27 +12,7 @@ def welcome_user(game):
                          'May I have your name? ')
     print(f'Hello, {user}!')
 
-    match game:
-        case 'Even':
-            print(RULES_EVEN)
-        case 'Calc':
-            print(RULES_CALC)
-        case 'Gcd':
-            print(RULES_GCD)
-        case 'Progression':
-            print(RULES_PROGRESSION)
-        case 'Prime':
-            print(RULES_PRIME)
-
     return user
-
-
-def get_user_answer(game):
-    match game:
-        case 'Even' | 'Prime':
-            return prompt.string('Your answer: ').lower()
-        case 'Calc' | 'Gcd' | 'Progression':
-            return prompt.integer('Your answer: ')
 
 
 def is_equal_answers(user_answer, corr_answer, user):

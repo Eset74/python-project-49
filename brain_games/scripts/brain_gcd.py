@@ -1,8 +1,8 @@
-from brain_games.scripts.games import brain_gcd
-from brain_games.scripts.games.launcher import start
+from brain_games.scripts.games import gcd
+from brain_games.launcher import start
 
 def main():
-    start(brain_gcd)
+    start(gcd)
 
 
 if __name__ == "__main__":
