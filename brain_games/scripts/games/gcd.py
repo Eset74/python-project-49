@@ -1,6 +1,7 @@
 from random import randrange
 from brain_games.scripts.vars_const import RULES_GCD
 
+
 def run_game():
     print(RULES_GCD)
     a, b = randrange(1, 100), randrange(1, 100)

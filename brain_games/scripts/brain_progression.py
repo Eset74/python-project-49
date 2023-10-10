@@ -1,6 +1,7 @@
 from brain_games.scripts.games import progression
 from brain_games.launcher import start
 
+
 def main():
     start(progression)
 

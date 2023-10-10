@@ -1,6 +1,7 @@
 from random import randrange
 from brain_games.scripts.vars_const import RULES_PROGRESSION
 
+
 def run_game():
     print(RULES_PROGRESSION)
     arithmetic_list = []

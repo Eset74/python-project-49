@@ -1,9 +1,4 @@
 #!/usr/bin/env/python3
-from brain_games.scripts.vars_const import RULES_EVEN
-from brain_games.scripts.vars_const import RULES_CALC
-from brain_games.scripts.vars_const import RULES_GCD
-from brain_games.scripts.vars_const import RULES_PROGRESSION
-from brain_games.scripts.vars_const import RULES_PRIME
 import prompt
 
 

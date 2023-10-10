@@ -1,6 +1,7 @@
 from random import randrange
 from brain_games.scripts.vars_const import RULES_PRIME
 
+
 def run_game():
     print(RULES_PRIME)
     result = False
