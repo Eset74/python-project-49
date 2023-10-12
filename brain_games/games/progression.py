@@ -1,9 +1,8 @@
 from random import randrange
-from brain_games.scripts.vars_const import RULES_PROGRESSION
+RULES = 'What number is missing in the progression?'
 
 
-def run_game():
-    print(RULES_PROGRESSION)
+def generate_data():
     arithmetic_list = []
 
     start_int = randrange(100)  # Start number of arithmetic progression

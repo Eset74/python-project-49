@@ -1,4 +1,4 @@
-from brain_games.scripts.games import progression
+from brain_games.games import progression
 from brain_games.launcher import start
 
 

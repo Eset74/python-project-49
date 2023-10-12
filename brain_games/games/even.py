@@ -1,9 +1,8 @@
 from random import randrange
-from brain_games.scripts.vars_const import RULES_EVEN
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def run_game():
-    print(RULES_EVEN)
+def generate_data():
     rand_num = randrange(100)
     print(f'Question: {rand_num}')
     return 'yes' if rand_num % 2 == 0 else 'no'

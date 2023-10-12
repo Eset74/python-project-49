@@ -1,4 +1,4 @@
-import brain_games.scripts.games.calc as calc
+import brain_games.games.calc as calc
 from brain_games.launcher import start
 
 

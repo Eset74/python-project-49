@@ -1,9 +1,8 @@
 from random import randrange
-from brain_games.scripts.vars_const import RULES_GCD
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def run_game():
-    print(RULES_GCD)
+def generate_data():
     a, b = randrange(1, 100), randrange(1, 100)
 
     print(f'Question: {a} {b}')

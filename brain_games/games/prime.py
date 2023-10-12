@@ -1,9 +1,8 @@
 from random import randrange
-from brain_games.scripts.vars_const import RULES_PRIME
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def run_game():
-    print(RULES_PRIME)
+def generate_data():
     result = False
     rand_num = randrange(100)
     print(f'Question: {rand_num}')
