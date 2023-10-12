@@ -1,4 +1,3 @@
-from brain_games.cli import welcome_user
 import prompt
 CHANCES = 3
 
