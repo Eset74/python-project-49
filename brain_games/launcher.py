@@ -4,10 +4,16 @@ CHANCES = 3
 
 
 def start(game):
-    user = welcome_user()
+
+    user = prompt.string('Welcome to the Brain Games!\n'
+                         'May I have your name? ')
+    print(f'Hello, {user}!')
     print(game.RULES)
+
     for _ in range(CHANCES):
-        corr_answer = game.generate_data()
+
+        question, corr_answer = game.generate_data()
+        print(question)
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == corr_answer:
