@@ -11,11 +11,27 @@
 * brain-prime - простые числа и этим всё сказано! 
 
 ## Минимальные требования:
-Вам понадобится UNIX-подобная операционная система и пакет make
+Вам понадобится UNIX-подобная операционная система
+- Python 3.10.12 и выше
+- Инструмент для управления зависимостями и сборки пакетов Poetry
+- Пакет make
 
 ## Инструкция по установке и запуску:
-- make build
-- make package-install
+1. Клонируйте гит к себе на компьютер
+```
+git clone git@github.com:Eset74/python-project-49.git
+```
+2. Перейдите в директорию проекта.
+```
+cd python-project-49
+```
+3. Установите необходимые зависимости.
+```
+poetry install
+make install
+make build
+make package-install
+```
 
 На ваш выбор запускаете, к примеру, brain-calc. Вызвать нужную игру можно следующими командами:
 + brain-calc
@@ -23,6 +39,8 @@
 + brain-gcd
 + brain-progression
 + brain-prime
+
+# Демонстрация работы
 
 Brain-even:
 [![asciicast](https://asciinema.org/a/40chH5UPViA4fJdBtxlp3Nugp.png)](https://asciinema.org/a/40chH5UPViA4fJdBtxlp3Nugp)
@@ -38,3 +56,5 @@ Brain-progression:
 
 Brain-prime:
 [![asciicast](https://asciinema.org/a/sMhSGMls7ahkgB2PJ2nLztTxA.png)](https://asciinema.org/a/sMhSGMls7ahkgB2PJ2nLztTxA)
+
+#### Создано при поддержке Hexlet, автор Eset74
