@@ -1,6 +1,5 @@
-from random import randrange
 from random import choice
-
+from random import randrange
 
 RULES = 'What is the result of the expression?'
 
@@ -8,14 +7,13 @@ RULES = 'What is the result of the expression?'
 def generate_data():
 
     a, b, exp = randrange(10), randrange(10), choice(['+', '-', '*'])
-    question = f'Question: {a} {exp} {b}'
 
     match exp:
         case '+':
-            result = str(a + b)
+            result = a + b
         case '-':
-            result = str(a - b)
+            result = a - b
         case '*':
-            result = str(a * b)
+            result = a * b
 
-    return question, result
+    return f'Question: {a} {exp} {b}', str(result)

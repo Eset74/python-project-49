@@ -13,8 +13,6 @@ def generate_data():
         arithmetic_list.append(start_num + step)
         start_num += step
 
-    corr_answer = arithmetic_list[hide_num]
     arithmetic_list[hide_num] = '..'
-    question = f'Question: {" ".join(map(str, arithmetic_list))}'
 
-    return question, str(corr_answer)
+    return f'Question: {" ".join(map(str, arithmetic_list))}', str(arithmetic_list[hide_num])

@@ -5,7 +5,7 @@ description = "brain-games"
 authors = ["Eset74 <eset74@gmail.com>"]
 readme = "README.md"
 packages = [
-  { include = "brain_games" },
+  { include = "hexlet_games" },
 ]
 
 [tool.poetry.scripts]
