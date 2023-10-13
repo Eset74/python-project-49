@@ -12,7 +12,7 @@ def generate_data():
     for i in range(10):
         arithmetic_list.append(start_num + step)
         start_num += step
-
+    corr_answer = str(arithmetic_list[hide_num])
     arithmetic_list[hide_num] = '..'
 
-    return f'Question: {" ".join(map(str, arithmetic_list))}', str(arithmetic_list[hide_num])
+    return f'Question: {" ".join(map(str, arithmetic_list))}', corr_answer
