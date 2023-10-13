@@ -1,5 +1,5 @@
-from games.games import even
-from games.launcher import start
+from hexlet_games.games import even
+from hexlet_games.launcher import start
 
 
 def main():

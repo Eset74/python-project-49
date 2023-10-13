@@ -1,5 +1,5 @@
-from games.games import gcd
-from games.launcher import start
+from hexlet_games.games import gcd
+from hexlet_games.launcher import start
 
 
 def main():

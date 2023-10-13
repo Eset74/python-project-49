@@ -1,5 +1,5 @@
-from games.games import progression
-from games.launcher import start
+from hexlet_games.games import progression
+from hexlet_games.launcher import start
 
 
 def main():

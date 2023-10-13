@@ -1,5 +1,5 @@
-import games.games.calc as calc
-from games.launcher import start
+import hexlet_games.games.calc as calc
+from hexlet_games.launcher import start
 
 
 def main():
