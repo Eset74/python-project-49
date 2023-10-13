@@ -28,4 +28,7 @@ def is_prime(rand_num):
 
 def generate_data():
     rand_num = randrange(100)
-    return (f'Question: {rand_num}', 'yes') if is_prime(rand_num) else (f'Question: {rand_num}', 'no')
+    if is_prime(rand_num):
+        return (f'Question: {rand_num}', 'yes')
+    else:
+        return (f'Question: {rand_num}', 'no')
