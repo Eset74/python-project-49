@@ -9,4 +9,5 @@ def is_even(number):
 def generate_data():
     rand_num = randrange(100)
 
-    return (f'{rand_num}', 'yes') if is_even(rand_num) else (f'{rand_num}', 'no')
+    return (f'{rand_num}', 'yes') \
+        if is_even(rand_num) else (f'{rand_num}', 'no')
