@@ -13,4 +13,4 @@ def get_gcd(a, b):
 
 def generate_data():
     a, b = randrange(1, 100), randrange(1, 100)
-    return f'Question: {a} {b}', str(get_gcd(a, b))
+    return f'{a} {b}', str(get_gcd(a, b))

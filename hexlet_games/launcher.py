@@ -2,12 +2,6 @@ import prompt
 CHANCES = 3
 
 
-# Было бы здорово, если бы я мог вам отвечать встречными
-# вопросами и уточнять ваши замечания.
-# Иначе это сделай так, потому что так правильно.
-# А почему и как я спросить не могу.
-# В маттермосте ответы очень долго ждать
-
 def start(game):
 
     user = prompt.string('Welcome to the Brain Games!\n'
@@ -18,7 +12,7 @@ def start(game):
     for _ in range(CHANCES):
 
         question, corr_answer = game.generate_data()
-        print(question)
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == corr_answer:
